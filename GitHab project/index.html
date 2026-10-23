@@ -1,99 +1,88 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Cars - продаж дорогих автомобілів</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Шапка сайту -->
-    <header>
-        <div class="logo">Luxury Cars</div>
-        <nav>
-            <a href="#home">Головна</a> <a href="#cars">Автомобілі</a> <a href="#about">Про нас</a>
-            <a href="#prices">Ціни</a> <a href="#contacts">Контакти</a>
-        </nav>
-    </header>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя перша HTML-форма</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form
+     action="https://httpbin.org/post" method="post"
 
-    <!-- Головний банер -->
-    <section id="home" class="banner">
-        <div class="banner-text">
-            <h1>Автомобілі преміум класу</h1>
-            <p>Продаємо найкращі спортивні та розкішні машини з усього світу</p>
-            <a href="#cars" class="button">Дивитись авто</a>
-        </div>
-    </section>
+    >
+      <h2>Моя перша HTML-форма</h2>
 
-    <!-- Каталог автомобілів -->
-    <section id="cars">
-        <h2>Наші автомобілі</h2>
-        <div class="cars">
-            <div class="car"><img src="/.netlify/images?url=/img/car1.png&w=600&fm=webp" alt="Ferrari 812 Superfast">
-                <h3>Ferrari 812 Superfast</h3> <p>Двигун: V12, 800 к.с.</p> <p>Рік: 2023</p> <p class="price">$ 420 000</p></div>
-            <div class="car"><img src="/.netlify/images?url=/img/car2.png&w=600&fm=webp" alt="Porsche 911 Turbo S">
-                <h3>Porsche 911 Turbo S</h3> <p>Двигун: 3.8 турбо, 650 к.с.</p> <p>Рік: 2024</p> <p class="price">$ 230 000</p></div>
-            <div class="car"><img src="/.netlify/images?url=/img/car3.png&w=600&fm=webp" alt="Rolls-Royce Phantom">
-                <h3>Rolls-Royce Phantom</h3> <p>Двигун: V12, 571 к.с.</p> <p>Рік: 2023</p> <p class="price">$ 480 000</p></div>
-            <div class="car"><img src="/.netlify/images?url=/img/car4.png&w=600&fm=webp" alt="Lamborghini Huracan">
-                <h3>Lamborghini Huracan</h3> <p>Двигун: V10, 640 к.с.</p> <p>Рік: 2022</p> <p class="price">$ 290 000</p></div>
-            <div class="car"><img src="/.netlify/images?url=/img/car5.png&w=600&fm=webp" alt="Bentley Continental GT">
-                <h3>Bentley Continental GT</h3> <p>Двигун: W12, 659 к.с.</p> <p>Рік: 2024</p> <p class="price">$ 310 000</p></div>
-            <div class="car"><img src="/.netlify/images?url=/img/car6.png&w=600&fm=webp" alt="Mercedes-Benz G63 AMG">
-                <h3>Mercedes-Benz G63 AMG</h3> <p>Двигун: V8, 585 к.с.</p> <p>Рік: 2024</p> <p class="price">$ 200 000</p></div>
-        </div>
-    </section>
+      <div class="field">
+        <label for="name">Ваше ім'я:</label>
+        <input id="name" name="name" type="text" placeholder="Ім'я" />
+      </div>
 
-    <!-- Про нас -->
-    <section id="about" class="about">
-        <h2>Про нас</h2>
-        <div class="about-block">
-            <img src="/.netlify/images?url=/img/hero.png&w=700&fm=webp" alt="Наш автосалон">
-            <div>
-                <p><b>Luxury Cars</b> - це автосалон, який займається продажем дорогих автомобілів вже більше 10 років.
-                    У нас ви можете купити нове або майже нове авто відомих брендів.</p>
-                <p>Чому обирають нас:</p>
-                <ul>
-                    <li>Тільки перевірені автомобілі</li> <li>Гарантія на кожну машину</li> <li>Доставка авто по всій Україні</li>
-                    <li>Можливість тест-драйву</li> <li>Допомога з оформленням документів</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+      <div class="field">
+        <label for="birthdate">Дата народження:</label>
+        <input id="birthdate" name="birthdate" type="date" />
+      </div>
 
-    <!-- Таблиця з цінами -->
-    <section id="prices">
-        <h2>Порівняння автомобілів</h2>
-        <table>
-            <tr><th>Модель</th><th>Потужність</th><th>Розгін 0-100 км/год</th><th>Максимальна швидкість</th><th>Ціна</th></tr>
-            <tr><td>Ferrari 812 Superfast</td><td>800 к.с.</td><td>2.9 с</td><td>340 км/год</td><td>$ 420 000</td></tr>
-            <tr><td>Porsche 911 Turbo S</td><td>650 к.с.</td><td>2.7 с</td><td>330 км/год</td><td>$ 230 000</td></tr>
-            <tr><td>Rolls-Royce Phantom</td><td>571 к.с.</td><td>5.3 с</td><td>250 км/год</td><td>$ 480 000</td></tr>
-            <tr><td>Lamborghini Huracan</td><td>640 к.с.</td><td>2.9 с</td><td>325 км/год</td><td>$ 290 000</td></tr>
-            <tr><td>Bentley Continental GT</td><td>659 к.с.</td><td>3.6 с</td><td>335 км/год</td><td>$ 310 000</td></tr>
-            <tr><td>Mercedes-Benz G63 AMG</td><td>585 к.с.</td><td>4.5 с</td><td>220 км/год</td><td>$ 200 000</td></tr>
-        </table>
-    </section>
+      <div class="field">
+        <label for="email">Імейл:</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" />
+        </label>
+      </div>
 
-    <!-- Контакти -->
-    <section id="contacts" class="contacts">
-        <h2>Контакти</h2>
-        <p>Адреса: м. Київ, вул. Хрещатик, 1</p> <p>Телефон: +38 (099) 123-45-67</p>
-        <p>Email: info@luxurycars.ua</p> <p>Працюємо щодня з 9:00 до 20:00</p>
-        <h3>Записатись на тест-драйв</h3>
-        <form>
-            <label>Ваше ім'я:</label> <input type="text" placeholder="Введіть ім'я">
-            <label>Телефон:</label> <input type="tel" placeholder="+38 (0__) ___-__-__">
-            <label>Оберіть автомобіль:</label>
-            <select>
-                <option>Ferrari 812 Superfast</option> <option>Porsche 911 Turbo S</option> <option>Rolls-Royce Phantom</option>
-                <option>Lamborghini Huracan</option> <option>Bentley Continental GT</option> <option>Mercedes-Benz G63 AMG</option>
-            </select>
-            <button type="button" onclick="alert('Дякуємо! Ми вам зателефонуємо.')">Надіслати</button>
-        </form>
-    </section>
+      <div class="field">
+        <label for="message">Повідомлення:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Ваш текст..."
+        ></textarea>
+      </div>
 
-    <!-- Підвал сайту -->
-    <footer><p>&copy; 2026 Luxury Cars. Всі права захищені.</p></footer>
-</body>
+      <fieldset class="field">
+        <legend>Ваші улюблені напої?</legend>
+        <label
+          ><input type="checkbox" name="drinks[]" value="tea" /> Чай</label
+        >
+        <label><input type="checkbox" name="drinks[]" value="lemonade" /> Лимонад</label>
+        <label
+          ><input type="checkbox" name="drinks[]" value="pinacolada" /> Піна колада</label
+        >
+        <label
+          ><input type="checkbox" name="drinks[]" value="water" /> Вода</label
+        >
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Моя національність</legend>
+        <label
+          ><input type="radio" name="nationality" value="ukrainian" />
+          Українець</label
+        >
+        <label
+          ><input type="radio" name="nationality" value="czech" />
+          Іспанець</label
+        >
+        <label
+          ><input type="radio" name="nationality" value="other" /> Інша</label
+        >
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+      </div>
+    </form>
+
+    <picture class="demo-picture">
+      <source
+        media="(max-width: 468px)"
+        srcset="https://picsum.photos/300/500"
+      />
+      <img
+        src="https://picsum.photos/1000/400"
+        alt="Демонстраційне зображення"
+      />
+    </picture>
+  </body>
 </html>
